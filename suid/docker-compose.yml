@@ -1,0 +1,8 @@
+services:
+  suid:
+    build: .
+    container_name: suid
+    hostname: suid
+    ports:
+      - "2214:22"
+    restart: unless-stopped

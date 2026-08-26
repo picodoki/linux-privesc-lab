@@ -1,0 +1,8 @@
+services:
+  shadow-readable:
+    build: .
+    container_name: shadow-readable
+    hostname: shadow-readable
+    ports:
+      - "2220:22"
+    restart: unless-stopped

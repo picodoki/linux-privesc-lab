@@ -1,0 +1,8 @@
+services:
+  passwd-writable:
+    build: .
+    container_name: passwd-writable
+    hostname: passwd-writable
+    ports:
+      - "2219:22"
+    restart: unless-stopped

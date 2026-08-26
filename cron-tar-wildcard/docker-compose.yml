@@ -1,0 +1,8 @@
+services:
+  cron-tar-wildcard:
+    build: .
+    container_name: cron-tar-wildcard
+    hostname: cron-tar-wildcard
+    ports:
+      - "2217:22"
+    restart: unless-stopped
