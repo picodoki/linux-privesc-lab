@@ -85,6 +85,10 @@ linux-privesc-lab/
 ├── ld-preload/
 ├── bash-func-hijack/
 └── mysql-udf/
+└──sudo-tee-write/
+└──sudo-cp-write/
+└──sudo-dd-write/	
+└──suid-tee-write/
 ```
 
 ## 免责声明
