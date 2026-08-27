@@ -1,0 +1,8 @@
+services:
+  ld-preload:
+    build: .
+    container_name: ld-preload
+    hostname: ld-preload
+    ports:
+      - "2221:22"
+    restart: unless-stopped

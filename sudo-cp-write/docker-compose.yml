@@ -1,0 +1,8 @@
+services:
+  sudo-cp-write:
+    build: .
+    container_name: sudo-cp-write
+    hostname: sudo-cp-write
+    ports:
+      - "2232:22"
+    restart: unless-stopped

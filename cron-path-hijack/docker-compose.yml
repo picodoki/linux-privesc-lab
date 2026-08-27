@@ -1,0 +1,8 @@
+services:
+  cron-path-hijack:
+    build: .
+    container_name: cron-path-hijack
+    hostname: cron-path-hijack
+    ports:
+      - "2218:22"
+    restart: unless-stopped

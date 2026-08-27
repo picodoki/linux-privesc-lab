@@ -1,0 +1,9 @@
+services:
+  mysql-udf:
+    build: .
+    container_name: mysql-udf
+    hostname: mysql-udf
+    ports:
+      - "2223:22"
+      - "3306:3306"
+    restart: unless-stopped

@@ -1,0 +1,8 @@
+services:
+  cron-writable-script:
+    build: .
+    container_name: cron-writable-script
+    hostname: cron-writable-script
+    ports:
+      - "2216:22"
+    restart: unless-stopped

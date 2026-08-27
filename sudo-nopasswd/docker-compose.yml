@@ -1,0 +1,8 @@
+services:
+  sudo-nopasswd:
+    build: .
+    container_name: sudo-nopasswd
+    hostname: sudo-nopasswd
+    ports:
+      - "2211:22"
+    restart: unless-stopped

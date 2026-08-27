@@ -1,0 +1,8 @@
+services:
+  sudo-tee-write:
+    build: .
+    container_name: sudo-tee-write
+    hostname: sudo-tee-write
+    ports:
+      - "2231:22"
+    restart: unless-stopped

@@ -1,0 +1,8 @@
+services:
+  capabilities:
+    build: .
+    container_name: capabilities
+    hostname: capabilities
+    ports:
+      - "2215:22"
+    restart: unless-stopped

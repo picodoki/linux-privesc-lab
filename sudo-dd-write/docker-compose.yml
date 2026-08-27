@@ -1,0 +1,8 @@
+services:
+  sudo-dd-write:
+    build: .
+    container_name: sudo-dd-write
+    hostname: sudo-dd-write
+    ports:
+      - "2233:22"
+    restart: unless-stopped

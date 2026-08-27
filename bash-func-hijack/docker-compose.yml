@@ -1,0 +1,8 @@
+services:
+  bash-func-hijack:
+    build: .
+    container_name: bash-func-hijack
+    hostname: bash-func-hijack
+    ports:
+      - "2222:22"
+    restart: unless-stopped
